@@ -1,0 +1,279 @@
+[2025-04-18 13:34:08,678] [ERROR] db.connection - [DB ERROR] tipe « datetime » belum ada
+Traceback (most recent call last):
+  File "C:\Users\seng\Desktop\bot_confess\db\connection.py", line 43, in get_connection
+    yield conn
+  File "C:\Users\seng\Desktop\bot_confess\db\helpers.py", line 30, in execute
+    return await conn.execute(query, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 349, in execute
+    result = await self._protocol.query(query, timeout)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg\\protocol\\protocol.pyx", line 375, in query
+asyncpg.exceptions.UndefinedObjectError: tipe « datetime » belum ada
+
+[2025-04-18 13:50:42,241] [ERROR] db.connection - [DB ERROR] tipe « datetime » belum ada
+Traceback (most recent call last):
+  File "C:\Users\seng\Desktop\bot_confess\db\connection.py", line 43, in get_connection
+    yield conn
+  File "C:\Users\seng\Desktop\bot_confess\db\helpers.py", line 30, in execute
+    return await conn.execute(query, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 349, in execute
+    result = await self._protocol.query(query, timeout)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg\\protocol\\protocol.pyx", line 375, in query
+asyncpg.exceptions.UndefinedObjectError: tipe « datetime » belum ada
+
+[2025-04-18 13:53:14,184] [ERROR] db.connection - [DB ERROR] tipe « datetime » belum ada
+Traceback (most recent call last):
+  File "C:\Users\seng\Desktop\bot_confess\db\connection.py", line 43, in get_connection
+    yield conn
+  File "C:\Users\seng\Desktop\bot_confess\db\helpers.py", line 30, in execute
+    return await conn.execute(query, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 349, in execute
+    result = await self._protocol.query(query, timeout)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg\\protocol\\protocol.pyx", line 375, in query
+asyncpg.exceptions.UndefinedObjectError: tipe « datetime » belum ada
+
+[2025-04-18 15:31:40,107] [ERROR] db.connection - [DB ERROR] 'sintaks error' diakhir masukan
+Traceback (most recent call last):
+  File "C:\Users\seng\Desktop\bot_confess\db\connection.py", line 43, in get_connection
+    yield conn
+  File "C:\Users\seng\Desktop\bot_confess\db\helpers.py", line 35, in fetch_one
+    return await conn.fetchrow(query, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 2004, in _do_execute
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 432, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "asyncpg\\protocol\\protocol.pyx", line 165, in prepare
+asyncpg.exceptions.PostgresSyntaxError: 'sintaks error' diakhir masukan
+
+[2025-04-18 15:31:40,110] [ERROR] db.connection - [DB ERROR] 'sintaks error' diakhir masukan
+Traceback (most recent call last):
+  File "C:\Users\seng\Desktop\bot_confess\db\connection.py", line 43, in get_connection
+    yield conn
+  File "C:\Users\seng\Desktop\bot_confess\db\helpers.py", line 35, in fetch_one
+    return await conn.fetchrow(query, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 2004, in _do_execute
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 432, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "asyncpg\\protocol\\protocol.pyx", line 165, in prepare
+asyncpg.exceptions.PostgresSyntaxError: 'sintaks error' diakhir masukan
+
+[2025-04-18 15:31:40,113] [ERROR] db.connection - [DB ERROR] 'sintaks error' diakhir masukan
+Traceback (most recent call last):
+  File "C:\Users\seng\Desktop\bot_confess\db\connection.py", line 43, in get_connection
+    yield conn
+  File "C:\Users\seng\Desktop\bot_confess\db\helpers.py", line 35, in fetch_one
+    return await conn.fetchrow(query, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 2004, in _do_execute
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 432, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "asyncpg\\protocol\\protocol.pyx", line 165, in prepare
+asyncpg.exceptions.PostgresSyntaxError: 'sintaks error' diakhir masukan
+
+[2025-04-18 16:18:50,795] [ERROR] db.connection - [DB ERROR] kolom « id » tidak ada
+Traceback (most recent call last):
+  File "C:\Users\seng\Desktop\bot_confess\db\connection.py", line 43, in get_connection
+    yield conn
+  File "C:\Users\seng\Desktop\bot_confess\handlers\admin\broadcast.py", line 63, in broadcast
+    users = await conn.fetch('SELECT id FROM users')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 690, in fetch
+    return await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 2004, in _do_execute
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 432, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "asyncpg\\protocol\\protocol.pyx", line 165, in prepare
+asyncpg.exceptions.UndefinedColumnError: kolom « id » tidak ada
+
+[2025-04-18 16:20:16,772] [ERROR] db.connection - [DB ERROR] kolom « id » tidak ada
+Traceback (most recent call last):
+  File "C:\Users\seng\Desktop\bot_confess\db\connection.py", line 43, in get_connection
+    yield conn
+  File "C:\Users\seng\Desktop\bot_confess\handlers\admin\broadcast.py", line 49, in remove_user_from_db
+    await conn.execute('DELETE FROM users WHERE id = $1', id)
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 352, in execute
+    _, status, _ = await self._execute(
+                   ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 2004, in _do_execute
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 432, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "asyncpg\\protocol\\protocol.pyx", line 165, in prepare
+asyncpg.exceptions.UndefinedColumnError: kolom « id » tidak ada
+
+[2025-04-18 16:21:50,160] [ERROR] db.connection - [DB ERROR] relasi « broadcast_messages » tidak ada
+Traceback (most recent call last):
+  File "C:\Users\seng\Desktop\bot_confess\db\connection.py", line 43, in get_connection
+    yield conn
+  File "C:\Users\seng\Desktop\bot_confess\handlers\admin\broadcast.py", line 55, in add_broadcast_entry
+    await conn.execute(
+    ...<2 lines>...
+    )
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 352, in execute
+    _, status, _ = await self._execute(
+                   ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 2004, in _do_execute
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "C:\Users\seng\AppData\Local\Programs\Python\Python313\Lib\site-packages\asyncpg\connection.py", line 432, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "asyncpg\\protocol\\protocol.pyx", line 165, in prepare
+asyncpg.exceptions.UndefinedTableError: relasi « broadcast_messages » tidak ada
+
